@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="maintainer" content="hawwdi" />
+    <meta name="year" content="2022" />
+
+    <title>
+        IE Midterm Project
+    </title>
+
+    <!-- importing styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg">
+    <div class="container">
+        <div id="left-holder">
+            <div class="avatar">
+                <div class="avatar-div">
+                    <img src="assets/user.jpg" id="avatar-img" >
+                </div>
+                <div class="name-div">
+                    <h1 id="account-name">Name</h1>
+                    <h4 id="blog">Blog</h4>
+                </div>
+            </div>
+            <div class="details">
+                <table class="details-table">
+                    <thead>
+                        <tr>
+                            <th style="padding-top: 7px">Location</th>
+                            <th style="padding-top: 7px">Following</th>
+                            <th style="padding-top: 7px">Followers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="loc">-</td>
+                            <td id="following">-</td>
+                            <td id="followers">-</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" style="text-align: left;">Bio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" id="bio" style="text-align: left;">-</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" style="text-align: left;">Favourite Programming Language</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" id="fav_lang" style="text-align: left;">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="right-holder">
+            <div class="user-input">
+                <input type="text" placeholder="username" id="username">
+                <div id="submit-button"><button onclick="get_user_data()">Search</button></div>
+                <label style="margin-left: 30px; margin-top: 40px; display: block;" for="check_local">
+                    Local Storage ? <input type="checkbox" id="check_local" />
+                </label>
+            </div>
+            <div id="response"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
